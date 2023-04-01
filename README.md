@@ -4,6 +4,18 @@ This is my solution to the [Space tourism website challenge on Frontend Mentor](
 
 ### Screenshots for desktop, tablet, and mobile
 
+Desktop
+
+<img src="https://github.com/hiiamcon/spacetourism/blob/main/assets/st-desktop.png" width="500" />
+
+Tablet
+
+<img src="https://github.com/hiiamcon/spacetourism/blob/main/assets/st-tablet.png" width="400" />
+
+Mobile
+
+<img src="https://github.com/hiiamcon/spacetourism/blob/main/assets/st-mobile.png" width="300" />
+
 ### The challenge
 
 Users should be able to:
