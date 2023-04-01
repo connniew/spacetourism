@@ -1,0 +1,127 @@
+header {
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 0.15rem;
+    height: 6rem;
+    flex-grow: 1;
+}
+
+.site-logo {
+    padding: 5% 0 5% 10%;
+}
+
+.hamburger-icon {
+    padding-right: 10%;
+    width: 1.5rem;
+    height: 1.3rem;
+}
+
+.site-nav--mobile {
+    backdrop-filter: blur(30px);
+    display: none;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 55%;
+}
+
+.site-nav__close--mobile {
+    margin-left: auto;
+    padding: 15%;
+}
+
+.site-nav__close--mobile,
+.site-nav--mobile ul {
+    display: block;
+}
+
+.site-nav--mobile li {
+    padding: 10%;
+}
+
+.num {
+    font-weight: 700;
+    margin-right: 0.3rem;
+}
+
+header hr {
+    display: none;
+}
+
+.js-active {
+    display: block;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    header {
+        height: auto;
+    }
+
+    .site-logo {
+        padding-left: 5%;
+    }
+
+    .hamburger-icon,
+    .site-nav__close--mobile {
+        display: none;
+    }
+
+    .site-nav {
+        background-color: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(35px);
+        display: block;
+        font-size: 0.8rem;
+        height: auto;
+        position: relative;
+        width: 60%;
+    }
+
+    .site-nav ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .site-nav li {
+        padding: 10% 0;
+    }
+
+    .site-nav .num {
+        display: none;
+    }
+
+    .site-nav .selected {
+        border-bottom: solid #FFF;
+    }
+
+    .site-nav li:not(.selected):hover {
+        border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    header hr {
+        border: 0.5px solid rgba(151, 151, 151, 0.5);
+        display: block;
+        width: 25%;
+    }
+
+    .site-nav {
+        font-size: 1rem;
+    }
+
+    .site-nav li {
+        padding: 5% 0;
+    }
+
+    .site-nav .num {
+        display: inline-block;
+        font-weight: 700;
+        margin-right: 0.3rem;
+    }
+}

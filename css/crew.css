@@ -1,0 +1,204 @@
+body {
+    background: url("../assets/crew/background-crew-mobile.jpg") no-repeat center fixed;
+    background-size: cover;
+}
+
+.tablet,
+.desktop {
+    display: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 10;
+    text-align: center;
+}
+
+.page-header {
+    font-size: 1rem;
+    letter-spacing: 2.7px;
+    padding: 1rem 0;
+}
+
+.image {
+    border-bottom: 0.5px solid rgba(151, 151, 151, 0.5);
+    width: 90%;
+}
+
+.image img {
+    height: 15rem;
+    margin: auto;
+}
+
+.content-nav {
+    display: flex;
+    gap: 1rem;
+    padding: 2rem 0;
+}
+
+.content-nav li {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 50%;
+    width: 0.6rem;
+    height: 0.6rem;
+}
+
+.content-nav li.selected {
+    background-color: #FFF;
+}
+
+.title {
+    font-family: 'Bellefair', serif;
+    opacity: 0.5;
+}
+
+.name {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.description {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    max-width: 19rem;
+    padding-bottom: 1rem;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    body {
+        background: url("../assets/crew/background-crew-tablet.jpg") no-repeat center fixed;
+        background-size: cover;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .tablet {
+        display: flex;
+    }
+
+    .page-header {
+        align-self: flex-start;
+        font-size: 1.25rem;
+        letter-spacing: 3.38px;
+        padding-left: 5%;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .name {
+        font-size: 2.5rem;
+    }
+
+    .description {
+        font-size: 1rem;
+        min-width: 29rem;
+        padding: 1rem;
+    }
+
+    .image {
+        border-bottom: none;
+    }
+
+    .image img {
+        height: 30rem;
+    }
+
+    .content-nav {
+        gap: 1.5rem;
+        padding: 3rem 0;
+    }
+
+    .content-nav li:not(.selected):hover {
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    body {
+        background: url("../assets/crew/background-crew-desktop.jpg") no-repeat center fixed;
+        background-size: cover;
+    }
+
+    .tablet {
+        display: none;
+    }
+
+    .desktop {
+        display: flex;
+    }
+
+    main {
+        flex-direction: row;
+        padding: 0 5%;
+    }
+
+    .page-header {
+        font-size: 1.75rem;
+        letter-spacing: 4.72px;
+        padding: 0;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+        text-align: left;
+        width: 50%;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 1.1rem;
+        line-height: 2rem;
+        min-width: 28rem;
+        padding: 0;
+    }
+
+    .content-nav {
+        padding: 0;
+    }
+
+    .content-nav li {
+        width: 0.9rem;
+        height: 0.9rem;
+    }
+
+    .image {
+        width: 45%;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+    .image {
+        width: 35%;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1600px and up) */
+@media (min-width: 1600px) {
+
+    .name {
+        font-size: 3.5rem;
+    }
+    
+    .image {
+        width: 30%;
+    }
+}
