@@ -6,7 +6,7 @@ This is my solution to the [Space tourism website challenge on Frontend Mentor](
 
 Desktop
 
-<img src="https://github.com/hiiamcon/spacetourism/blob/main/assets/st-desktop.png" width="500" />
+<img src="https://github.com/hiiamcon/spacetourism/blob/main/assets/st-desktop.png" width="700" />
 
 Tablet
 
